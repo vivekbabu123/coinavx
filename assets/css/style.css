@@ -1,0 +1,1514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oxanium', cursive;
+    overflow-x: hidden;
+    font-family: 'DEICHO';
+
+}
+@font-face {
+    font-family: DEICHO;
+    src: url(../fonts/DEICHO-Black.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: DEICHO;
+    src: url(../fonts/DEICHO-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: DEICHO;
+    src: url(../fonts/DEICHO-ExtraBold.otf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Oxanium;
+    src: url(../fonts/Oxanium-SemiBold.ttf);
+    font-weight: 600;
+}
+section{
+    padding: 80px 0;
+}
+footer{
+	padding:80px 0;
+}
+:root{
+	--white-:#FFFFFF;
+	--yellow-:#E4C049;
+	--backblack-:#010005;
+	 --backgrey-: #18171E;
+	 --blackblack:#32323b;
+	 --white-text:#D4D4D4;
+	 --para-white:rgba(212, 212, 212, 1);
+	 --border-c:rgba(52, 48, 48, 1);
+}
+/* start header */
+.menu_bar {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner/background.png);
+    min-height: 90px;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-) !important;
+    margin: 0 8px;
+	font-family:Montserrat;
+	font-weight:400;
+}
+ul.dropdown-menu.show {
+	background-color:var(--backgrey-);
+}
+.nav-button button{
+	font-family:Oxanium;
+	font-size:17px;
+	font-weight:600;
+}
+.nav-button {
+	z-index:1;
+}
+.nav-button::before{
+	position:absolute;
+	content:'';
+	background-image: url('../images/banner/registerborder.png');
+	width:121px;
+	height:41px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	left:-20px;
+	z-index:-1;
+	
+}
+.nav-button::after{
+	position:absolute;
+	content:'';
+	background-image: url('../images/banner/border1_btn.png');
+	width:121px;
+	height:40px;
+	right:-13px;
+	z-index:-1;
+	
+}
+
+/* finish header */
+/* start banner */
+.banner {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../images/banner/background.png);
+    min-height: 100vh;
+    background-size: cover;
+	position:relative;
+}
+.banner::after{
+	position:absolute;
+	content:'';
+	background-image:url(../images/banner/border-bottom.png);
+	width:1320px;
+	height:28px;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+
+.banner_text{
+    transform: translate(150px);
+}
+.banner_offer span {
+    background-color: var(--blackblack);
+    padding: 8px 25px;
+    border-radius: 10px;
+}
+.banner_head h1{
+    position: relative;
+    font-family: DEICHO;
+    font-weight: 700;
+    font-size: 57px;
+    color: var(--white-);
+    margin-bottom: 20px;
+}
+.banner_head h1::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/banner/arrow_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 43px;
+    height: 59px;
+    left: -35px;
+    top: -30px  ;
+}
+.banner_head span{
+    color: var(--yellow-);
+}
+.banner_head span::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/banner/banner_star.png);
+    background-position: center;
+    background-size: contain;
+    width: 58px;
+    height: 58px;
+}
+.banner_content h1{
+	 position: relative;
+    font-family: DEICHO;
+    font-weight: 700;
+    font-size: 57px;
+    color: var(--white-);
+    margin-bottom: 20px;
+}
+.banner_content span{
+    color: var(--yellow-);
+}
+.banner_content p{
+	font-size:20px;
+	color:var(--white-);
+}
+
+.banner_head h4{
+    font-family: Oxanium;
+    font-size: 25px;
+    font-weight: 600;
+}
+.banner_head p{
+    font-family: Oxanium;
+    font-size: 21px;
+    color: var(--white-);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.banner_button{
+    position: relative;
+}
+.banner_button button::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/banner/navexplorenow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 45px;
+    left: -15px;
+    top: 0;
+    z-index: -1;
+
+}
+.banner_button button::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/banner/navcreate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 45px;
+    left:130px;
+    top: 0;
+    z-index: -1;
+}
+.carousel-control-prev-icon {
+	position:relative;
+    background-image: url(../images/banner/prev.png) !important;
+	
+	}
+.carousel-control-next-icon {
+	position:relative;
+    background-image: url(../images/banner/next.png) !important;
+
+	
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem !important;
+    height: 3rem !important;   
+}
+	
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	top:65%;
+	left:0;
+	right:0;
+	margin:0 auto;
+	
+}
+.carousel-control-prev {
+	top:0;
+    right:60px;;
+    left:0;
+    margin:0 auto;
+}
+.carousel-control-next{
+    right:0;
+    left: 60px !important;
+    margin:0 auto;
+}
+
+/* .carousel-control-next, .carousel-control-prev { */
+	/* width:2% !important	 ; */
+/* } */
+/* finish banner */
+/* start smart trade */
+.smart_trade{
+    background:var(--backblack-);
+	position:relative;
+}
+.smart_trade:after{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/right_img.png);
+	width:180px;
+	height:510px;
+	background-size:contain;
+	background-position:center;
+	top:0;
+	right:0;
+}
+.smart_trade:before{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/Popular_before.png);
+	width:1320px;
+	height:206px;
+	background-size:contain;
+	background-position:center;
+	right:0;
+	left:0;
+	margin:0 auto;
+	bottom:52px;
+}
+
+
+.simply h4{
+    font-family: Oxanium;
+    font-size: 47px;
+    font-weight: 600;
+    color: var(--white-);
+}
+.simply{
+	position:relative;
+	padding-top:15px;
+}
+
+.simply h4::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/banner/banner_star.png);
+    background-position: center;
+    background-size: contain;
+    width: 58px;
+    height: 58px;
+}
+.simply_trade{
+    padding: 15px 25px;
+    
+    position: relative;
+}
+.simply span{
+    color: var(--yellow-);
+}
+.simply::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/before1.png);
+    width: 18px;
+    height: 200px;
+    left: -38px;
+    background-size: cover;
+    background-position: center;
+    top: -21px;
+}
+.seure p{
+    font-family: Oxanium;
+    color: var(--para-white);
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.seure a{
+    font-family: Oxanium;
+    color: var(--yellow-);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.seure a:hover{
+	color: var(--yellow-);
+	margin-right:10px;
+}
+.seure::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/before2.png);
+    width: 18px;
+    height: 200px;
+    right: -2px;
+    background-size: cover;
+    background-position: center;
+    top: -5px;
+}
+.seure span{
+	background:rgba(255, 255, 255, 0.11);
+	border-radius:3px;
+	padding:5px 2px;
+}
+/* finish smart trade*/
+/* start crypto table */
+.crypto_table{
+    background-color: var(--backblack-);
+	position:relative;
+}
+.crypto_table:before{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/left_img.png);
+	width:180px;
+	height:420px;
+	background-size:contain;
+	background-position:center;
+	bottom:60px;
+	left:0;
+}
+
+.table_heading h1{
+    font-family: Oxanium;
+    font-size: 47px;
+    font-weight: 600;
+    color: var(--white-);
+	position:relative;
+}
+.table_heading h1::before{
+	position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    width: 9px;
+    height: 73px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0 -10px;
+	
+}
+.table_heading span{
+    color: var(--yellow-);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--yellow-) !important;
+    font-family: Oxanium;
+    font-weight: 600;
+	color:var(--backblack-) !important;
+}
+.nav-pills .nav-link{
+    background-color: var(--backgrey-)!important;
+	color:var(--para-white) !important;
+}
+.nft_search{
+    background-color:var(--backgrey-) !important;
+    border: none !important ;
+}
+li.popularnft {
+    margin: 0 15px;
+}
+table{
+    padding: 0 25px;
+}
+.god_data{
+	background:var(--backgrey-);
+	padding:10px 0px;
+	border:1px solid var(--border-c) !important;
+	border-radius:5px;
+    
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 1.7rem !important;
+}
+table thead tr td{
+	font-family:Oxanium;
+	font-size:18px;
+	font-weight:500;
+	color: var(--para-white);
+	margin-left:25px;
+	border-bottom:1px solid var(--border-c)!important;
+}
+table tbody tr td{
+	font-family:Oxanium;
+    border: none;
+    font-size: 16px;
+    color: var(--para-white);
+}
+.table_btn button{
+	font-size:18px;
+	color:rgba(135, 130, 130, 1);
+	font-weight:600;
+
+}
+.table_btn button:hover{
+	color:rgba(135, 130, 130, 1);
+}
+.table_btn span{
+	background:rgba(255, 255, 255, 0.11);
+	border-radius:3px;
+	padding:3px 2px;
+}
+/* finish crypto table */
+/* start wht is coinAVX */
+.crypto_coinAVX{
+    background-color: var(--backblack-);
+}
+.headcoin h1{
+    position: relative;
+} 
+.headcoin h1{
+    font-family: Oxanium;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--white-);  
+    margin-bottom: 20px;  
+}
+.headcoin h1::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top: -10px;
+    bottom: 0;
+    margin: 0 -20px;
+}
+.headcoin h1::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top: -10px;
+    bottom: 0;
+    margin: 0 10px;
+}
+.headcoin span{
+    color:var(--yellow-);
+}
+.headcoin h4{
+    font-family: Oxanium;
+    font-size: 23px;
+    font-size: 700;
+    color: var(--white-);
+    margin-bottom: 20px;
+}
+.headcoin p{
+    font-family: Oxanium;
+    font-size: 19px;
+    font-size: 400;
+	color:var(--para-white) !important;
+}
+.coinavx_card{
+    position: relative;
+    z-index: 1;
+}
+ .exchange_card::before{
+    position: absolute;
+    content: '';
+    background: url(../images/what_coinavx/coinavx_img.png);
+    width: 520px;
+    height: 340px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: -53px;
+    z-index: -1;
+ } 
+ .exchange_text h3{
+    font-size: 27px;
+    font-family: Oxanium;
+    font-weight: 700;
+    color: var(--white-);
+ }  
+ .exchange_text p{
+    font-size: 17px;
+    font-family: Oxanium;
+    font-weight: 400;
+    color:var(--para-white);
+ }
+ .exchange_card{
+    position: relative;
+ }
+ .ecxh_cryptp h3{
+	font-size: 27px;
+    font-family: Oxanium;
+    font-weight: 700;
+    color: var(--white-);
+ }
+ .ecxh_cryptp p{
+    font-size: 17px;
+    font-family: Oxanium;
+    font-weight: 400;
+    color:var(--para-white);
+ }
+ .ecxh_cryptp  p::before{
+    position: absolute;
+    content:'';
+    background: url(../images/what_coinavx/bottom_line.png);
+    width: 216px;
+    height: 33px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+ 
+.exchange_img::before{
+    position: absolute;
+    content:'';
+    background: url(../images/what_coinavx/top_line1.png);
+    width: 161px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.exchange_text p::before{
+    position: absolute;
+    content:'';
+    background: url(../images/what_coinavx/bottom_line.png);
+    width: 216px;
+    height: 33px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -42px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/* finish what is coinAVX */
+/* start NFT */
+.Nft_photo{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/nft/background_img.png);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.nft_content{
+    position: relative;
+}
+.nft_content h1{
+    font-size: 47px;
+    font-weight: 600;
+    font-family: Oxanium;
+    color: var(--white-);
+    margin-bottom: 20px;
+}
+.nft_content h1::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    width: 9px;
+    height: 73px;
+    top:-10px;
+    bottom: 0px;
+    margin: 0 -10px;  
+}
+.nft_text h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Oxanium;
+    color: var(--white-);
+    margin-bottom: 20px;
+}
+.nft_text span{
+    color: var(--yellow-);
+}
+.nft_text p{
+    color:var(--para-white);
+    font-size: 19px;
+    font-weight: 400;
+}
+.nft_market::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/nft/background_before.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1260px;
+    height: 540px;
+}
+/* finish Nft */
+/* start gold market */
+.gold_market{
+    background-color: var(--backblack-);
+}
+.gold_content{
+    position: relative;
+}
+.gold_content h1{
+    color: var(--white-);
+    font-family: Oxanium;
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.gold_content h1::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    width: 9px;
+    height: 73px;
+    top:-10px;
+    bottom: 0px;
+    margin: 0 -10px; 
+}
+.gold_content span{
+    color: var(--yellow-);
+}
+.gold_content h4{
+    font-family: Oxanium;
+    font-size: 23px;
+    color: var(--white-);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.gold_content p{
+	color:var(--para-white);
+	font-size: 19px;
+}
+
+/* finish gold market */
+ /* start coinAVX features */
+.coinavx_feature{
+    background-color: var(--backblack-);
+	position:relative;	
+}
+.coinavx_feature:before{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/left_img.png);
+	width:180px;
+	height:420px;
+	background-size:contain;
+	background-position:center;
+	bottom:0px;
+	left:0;
+}
+.coinavx_feature:after{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/right_img.png);
+	width:180px;
+	height:510px;
+	background-size:contain;
+	background-position:center;
+	top:50px;
+	right:0;
+}
+
+.feature_coinAVX h1{
+    font-family: Oxanium;
+    font-size: 47px;
+    color: var(--white-);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.feature_coinAVX h4{
+    font-family: Oxanium;
+    font-size: 34px;
+    color: var(--white-);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.feature_coinAVX span{
+    color: var(--yellow-);
+}
+.feature_coinAVX h1::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top: -10px;
+    bottom: 0;
+    margin: 0 -20px;
+}
+.feature_coinAVX h1::after{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top: -10px;
+    bottom: 0;
+    margin: 0 10px;
+}
+.feature_coinAVX p{
+	 font-family: Oxanium;
+    font-size: 18px;
+    color:var(--para-white) !important;
+    font-weight: 400;
+}
+.coinavx_text h1{
+	font-family: Oxanium;
+    font-size: 22px;
+    color: var(--white-);
+    font-weight: 500;	
+}
+.coinavx_text p{
+	font-family: Oxanium;
+    font-size: 17px;
+    color:var(--para-white);
+    font-weight: 400;	
+}
+.coinAvx_mainline{
+	position:relative;
+}
+.coinAvx_mainline::before{
+	position:absolute;
+	content:'';
+    background-image:url(../images/feature/step_line.png);
+	width:1080px;
+	height:1310px;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.coinavx_line {
+	position:relative;
+	left: 180px;
+    top: -32px;
+}
+.coinavx_line2{
+	position:relative;
+	
+	right:180px;
+    bottom:55px;	
+}
+.coinavx_line3{
+	position:relative;
+	left:25px;
+    bottom:25px;	
+}
+.coinavx_line4{
+	position:relative;
+	right:100px;
+    bottom:15px;	
+}
+.coinavx_line5{
+	position:relative;
+	left:70px;
+}
+.coinavx_line6{
+	position:relative;
+	left:-130px;	
+}
+ /* finish coinAVX features */
+ 
+/* start every coin treading */
+.every_coinavx{
+	    background-image:url(../images/buy_coinavx/background_img.png);
+		min-height:60vh;
+		background-position:center;
+		background-size:cover;	
+}
+
+
+.everycoin_content h1{
+	position:relative;
+	font-family: Oxanium;
+    font-size: 39px;
+    color: var(--white-text);
+    font-weight: 700;
+}
+.everycoin_content h1::first-letter{
+	color:var(--yellow-); 
+}
+.everycoin_content h1 span{
+	color:var(--yellow-); 
+}
+.everycoin_content p{
+	font-family: Oxanium;
+	font-size:17px;
+	font-weight:400;
+	color:var(--para-white);
+}
+.everycoin_content h1::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top: 0;
+    margin: 0 -20px;
+}
+/* finish every coin trading */
+	/* start gold risk */
+.gold_risk{
+	background:var(--backblack-);
+	position:relative;
+}
+.gold_risk:after{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/right_img.png);
+	width:180px;
+	height:510px;
+	background-size:contain;
+	background-position:center;
+	top:50px;
+	right:0;
+}
+.rsk-all{
+	max-width:400px;
+	min-height:300px;
+	padding:15px 25px;
+	background-image: linear-gradient(324.06deg, #DEAA1F 6.48%, #6A5A33 25.26%, #1A191E 41.98%);
+}	
+.rsk_content h1{
+	font-family: Oxanium;
+	font-size:24px;
+	font-weight:700;
+	color:var(--white-text);	
+}
+.rsk_content p{
+	font-family: Oxanium;
+	font-size:15px;
+	font-weight:400;
+	color:var(--para-white);	
+}
+/* finish gold risk */
+/* start faq tag */
+.tabs_question{
+	 background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/faq/bg_img.png);
+	 min-height:70vh;
+	 background-size:cover;
+	 background-position:center;	
+}
+.faq_heading h1{
+	
+	font-family: Oxanium;
+	font-size:29px;
+	font-weight:600;
+	color:var(--white-text);
+}
+.faq_heading h4{
+	position:relative;
+	font-family: Oxanium;
+	font-size:36px;
+	font-weight:600;
+	color:var(--white-text);
+}
+.faq_heading span{
+		color:var(--yellow-); 
+}
+.faq_heading h4::before{
+    position: absolute;
+    content: '';
+    background-image: url(../images/popular-currency/main_before.png);
+    background-size: contain;
+    background-position: center;
+    width: 9px;
+    height: 73px;
+    top:px;
+    bottom: 0;
+    margin: 0 -20px;
+}
+/* finish faq tag */
+ /* start accordian */
+.tabs_abc .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--backgrey-) !important;
+	background-image: url(../images/what_coinavx/coinavx_img.png);
+	background-size:cover;
+	width: 180px;
+    height: 140px;
+}
+#v-pills-tab {
+	 background-color: var(--backgrey-) !important;
+	  padding:10px 15px;
+	  border-radius:  10px;
+}
+.nav_abc{
+	margin: 5px 0 !important;
+ }
+.exchange_btn h1{
+	font-family:Oxanium;
+	font-size:21px;
+	font-weight:600;
+	color:var(--para-white);	
+}
+.accordion-item {
+  margin: 20px 0;
+  border:none !important;
+  box-shadow:none;
+}
+.accordion-body {
+    font-family:Oxanium;
+    font-size: 18px;
+	color:var(--para-white) !important;
+	
+}
+.accordion-button:not(.collapsed)::after {
+	 background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+   
+}
+.accordion-button{
+	font-family:Oxanium;
+   background-color:var(--backblack-) !important;
+   color:var(--white-) !important;
+	font-size:19px !important;	
+	box-shadow:none !important;
+}
+.accordion-button span{
+	background:var(--backgrey-);
+	padding:5px;
+	border-radius:20px;
+	margin-right:10px;
+}
+.accordion-collapse{
+	 background-color: var(--backblack-) !important;
+   color:var(--white-) !important;
+	font-size:19px !important;
+}
+
+.accordion-button::after{
+	background-image:\F235 !important;
+	font-weight:600;
+  
+} 
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+	font-weight:600;
+}
+/* finish acordian */
+.footer_bar{
+	 background-image: url(../images/faq/footer.png);
+	 min-height:60vh;
+	 background-size:cover;
+	 background-position:center;
+	 position:relative;
+}
+.footer_bar:before{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/left_img.png);
+	width:180px;
+	height:420px;
+	background-size:contain;
+	background-position:center;
+	bottom:0px;
+	left:0;
+}
+.footer_bar:after{
+	position:absolute;
+	content:'';
+	background-image:url(../images/Popular-currency/right_img.png);
+	width:180px;
+	height:510px;
+	background-size:contain;
+	background-position:center;
+	top:50px;
+	right:0;
+}
+.footer_content{
+	font-family:Oxanium;
+	font-size:19px;
+	font-weight:400;
+	letter-spacing:1.5px;
+	color:var(--para-white);	
+}
+.footer_follow h1{
+	font-family:Oxanium;	
+}
+.footer-icon{
+	position:relative;
+	cursor:pointer;
+}
+.footer-icon img{
+	position:relative;
+	margin:0 26px;
+}
+.footer_facebook::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;
+	left:12px;
+}
+.footer_inst{
+	position:relative;
+}
+.footer_inst::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;
+	left:12px;
+	
+	
+}
+.linkin{
+	position:relative;
+}
+.linkin::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;	
+	left:12px;
+	
+}
+.footer_tele{
+	position:relative;
+}
+.footer_tele::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;	
+	left:12px;
+}
+.footer_twi{
+	position:relative;
+}
+.footer_twi::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;
+	left:12px;	
+}
+.foot_yout{
+	position:relative;
+}
+.foot_yout::before{
+	 position: absolute;
+    content: '';
+    background-image: url(../images/footer/social-media-bg.png);
+    background-size: contain;
+    background-position: center;
+    width: 58px;
+    height: 46px;
+    top:-8px;
+    bottom: 0;	
+	left:12px;
+}
+.footer_svg {
+	position:relative;	
+}
+
+.footer_svg img{
+	position:relative;
+	margin:0 26px;	
+}
+.footer_widget h2 {
+	font-family:Oxanium;
+	font-size:29px;
+	font-weight:600;
+	color:var(--white-)	
+}
+.footer_link ul{
+	padding-left:0px !important;
+}
+.footer_link ul li{
+	list-style:none;
+	margin:25px 0;
+
+	
+}
+.footer_link ul li a{
+	text-decoration:none;
+	color:var(--para-white);
+	font-family:Oxanium;
+	font-size:19px;
+	
+}
+
+@media all and (min-width:992px) and (max-width:1400px) {
+	.banner_text {
+    transform: translate(0px);
+}
+.banner::after{
+	width:992px;
+}
+.simply::before{
+	height:212px;
+}
+.smart_trade:before{
+		display:none;
+		
+	}
+.seure::after{
+	height:210px;
+}
+.headcoin p{
+	font-size:15px;	
+}
+.exchange_card::before{
+	display:none;
+}
+.exchange_text p{
+	font-size:10px;
+}
+.exchange_img::before{
+	display:none;
+}
+.exchange_text::before{
+	display:none;
+}
+.nft_market::after{
+	width:952px;
+	
+}
+.rsk-all{
+	max-width:280px;
+}
+.coinAvx_mainline::before{
+	display:none;
+}
+    
+}
+@media all and (min-width:768px) and (max-width:991px) {
+	.banner_text{
+    transform: translate(0px);
+	}
+	.banner::after{
+	display:none
+	}
+	.smart_trade:before{
+		display:none;
+		
+	}
+    .simply::before{
+        display: none;
+    }
+    .banner_text h1{
+        font-size: 24px;
+    }
+	 .simply::before{
+        display: none;
+    }
+	.simply h4::after{
+		display:none;
+	}
+	.seure::after{
+		display:none;
+	}
+	.exchange_card::before{
+		display:none;
+	}
+	.exchange_text::before{
+		display:none;
+	}
+	.exchange_text p{
+		font-size:10px;
+	}
+	.nft_market::after{
+		display:none;
+	}
+	.coinAvx_mainline::before{
+		display:none;
+		
+	}
+	.feature_coinAVX p{
+		font-size:16px;
+		
+	}
+	.coinavx_line {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+    .coinavx_line2 {
+        position: relative;
+        right: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line3 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line4 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line5 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line6 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+	.rsk-all{
+		max-width:320px;
+	}
+	.footer_widget{
+		margin:15px 0;
+	}
+    
+}
+@media all and (min-width:320px) and (max-width:767px) {
+	.banner_text{
+    transform: translate(0px);
+	}
+	.banner_offer span{
+		padding:7px 10px;
+	}
+	.banner_head h1{
+		font-size:36px;
+	}
+	.smart_trade:before{
+		display:none;
+		
+	}
+	.banner::after{
+	display:none
+	}
+    .simply::before{
+        display: none;
+    }
+    .simply_trade{
+        padding: 0px;
+    }
+    
+    .simply h4{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+	.simply h4::after{
+		display:none;
+	}
+	.ecxh_cryptp  p{
+		display:none;
+	}
+    
+    .seure p {
+        font-size: 16px;
+    }
+    .seure::after{
+        display: none;
+    }
+    .table_heading h1{
+        font-size: 36px;
+    }
+    .nav-link{
+        margin: 10px 0;
+    }
+    .headcoin h4{
+        font-size: 19px;
+    }
+    .headcoin p{
+        font-size: 13px;
+    }
+    .exchange_card::before{
+        display: none;
+
+    }
+	.exchange_text p{
+		font-size:15px;
+	}
+	.exchange_text::before{
+		display:none;
+	}
+    .nft_market::after{
+        display: none;
+    }
+    .feature_coinAVX h1{
+        font-size: 30px;
+    }
+	.feature_coinAVX h4{
+		text-align:left !important;
+	}
+	.feature_coinAVX p {
+		text-align:left !important;
+	}
+    .coinAvx_mainline::before{
+        display: none;
+    }
+	.coinavx_text h1{
+		font-size:20px;
+	}
+	.coinavx_text p{
+		font-size:15px;
+	}
+    .coinavx_line {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+    .coinavx_line2 {
+        position: relative;
+        right: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line3 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line4 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line5 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .coinavx_line6 {
+        position: relative;
+        left: 0px; 
+         bottom: 0px;
+    }
+    .everycoin_content h1{
+        font-size: 30px;
+    }
+    .everycoin_content p{
+        font-size: 12px;
+    }
+	.footer_widget{
+		margin:15px 0;
+	}
+}
